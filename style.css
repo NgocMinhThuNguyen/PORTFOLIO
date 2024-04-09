@@ -1,0 +1,179 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  --clr-black: 0 0 8%;
+  --clr-dark-grey: 0 0 14%;
+  --clr-green: 153 71 59%;
+  ---clr-grey: 0 0 85%;
+  ---clr-white: 0 0 100%;
+
+  --fs-100: 1.125rem;
+  --fs-200: 1.5rem;
+  --fs-400: 3.5rem;
+  --fs-800: 5.5rem;
+
+  ---fw-500: 500;
+  --fw-700: 700; 
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Import font         */
+/* ------------------- */
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+  font-weight: 500 700;
+}
+
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/static/SpaceGrotesk-Medium.ttf");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/static/SpaceGrotesk-Bold.ttf");
+    font-weight: 700;
+  }
+}
+
+/* ------------------- */
+/* Utility             */
+/* ------------------- */
+
+/* general */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+/* colors */ 
+.bg-black { background-color: hsl(var(--clr-black));}
+.bg-dark-grey {background-color: hsl(var(--clr-dark-grey));}
+.bg-green { background-color: hsl(var(--clr-green));}
+.bg-grey { background-color: hsl(var(--clr-grey));}
+.bg-white { background-color: hsl(var(--clr-white));}
+
+/* typhography */
+.text-black { background-color: hsl(var(--clr-black));}
+.text-dark-grey {background-color: hsl(var(--clr-dark-grey));}
+.text-green { background-color: hsl(var(--clr-green));}
+.text-grey { background-color: hsl(var(--clr-grey));}
+.text-white { background-color: hsl(var(--clr-white));}
+
+.fw-500 { font-weight: 500;}
+.fw-700 { font-weight: 700;}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.icon {
+  cursor: pointer;
+  fill: hsl((var(--clr-green)));
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration-color: hsl(var(--clr-green));
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1rem;
+}
+.btn:hover {
+  cursor: pointer;
+  color: hsl(var(--clr-green));
+}
+
