@@ -6,8 +6,8 @@
   --clr-black: 0 0 8%;
   --clr-dark-grey: 0 0 14%;
   --clr-green: 153 71 59%;
-  ---clr-grey: 0 0 85%;
-  ---clr-white: 0 0 100%;
+  --clr-grey: 0 0 85%;
+  --clr-white: 0 0 100%;
 
   --fs-100: 1.125rem;
   --fs-200: 1.5rem;
@@ -129,6 +129,10 @@ select {
 /* ------------------- */
 
 /* general */
+body {
+  background-color: hsl(var(--clr-black));
+  font-family: 'Space Grotesk', sans-serif;
+}
 
 .flex {
   display: flex;
@@ -148,11 +152,11 @@ select {
 .bg-white { background-color: hsl(var(--clr-white));}
 
 /* typhography */
-.text-black { background-color: hsl(var(--clr-black));}
-.text-dark-grey {background-color: hsl(var(--clr-dark-grey));}
-.text-green { background-color: hsl(var(--clr-green));}
-.text-grey { background-color: hsl(var(--clr-grey));}
-.text-white { background-color: hsl(var(--clr-white));}
+.text-black { color: hsl(var(--clr-black));}
+.text-dark-grey {color: hsl(var(--clr-dark-grey));}
+.text-green { color: hsl(var(--clr-green));}
+.text-grey { color: hsl(var(--clr-grey));}
+.text-white { color: hsl(var(--clr-white));}
 
 .fw-500 { font-weight: 500;}
 .fw-700 { font-weight: 700;}
@@ -176,4 +180,9 @@ select {
   cursor: pointer;
   color: hsl(var(--clr-green));
 }
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
 
