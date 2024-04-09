@@ -184,6 +184,7 @@ body {
 }
 
 .btn {
+  color: hsl(var(--clr-white));
   text-transform: uppercase;
   text-decoration-color: hsl(var(--clr-green));
   text-decoration-thickness: 2px;
