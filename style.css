@@ -144,6 +144,19 @@ body {
   gap: var(--gap, 1rem);
 }
 
+.sr-only {
+  display: none;
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 /* colors */ 
 .bg-black { background-color: hsl(var(--clr-black));}
 .bg-dark-grey {background-color: hsl(var(--clr-dark-grey));}
