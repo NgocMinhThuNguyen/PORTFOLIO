@@ -130,7 +130,7 @@ select {
 
 /* general */
 body {
-  /* background-color: hsl(var(--clr-black)); */
+  background-color: hsl(var(--clr-black));
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -199,8 +199,29 @@ body {
   color: hsl(var(--clr-green));
 }
 
+.logo {
+  text-decoration: none;
+}
+
 /* ------------------- */
 /* Layout              */
 /* ------------------- */
 
+/* general */
+
+header, main {
+  padding-inline: 1rem;
+}
+
+/* navigation */
+
+.primary-header, .footer-nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  list-style: none;
+  align-items: center;
+}
 
