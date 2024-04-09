@@ -194,6 +194,7 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 1rem;
 }
+
 .btn:hover {
   cursor: pointer;
   color: hsl(var(--clr-green));
@@ -225,5 +226,19 @@ header, main {
   list-style: none;
   padding-inline-start: 0;
   align-items: center;
+}
+
+/* introduction */
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+
+}
+
+.avatar {
+  max-width: 50%;
+  justify-self: center;
 }
 
