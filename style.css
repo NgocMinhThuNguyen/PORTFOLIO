@@ -130,7 +130,7 @@ select {
 
 /* general */
 body {
-  background-color: hsl(var(--clr-black));
+  /* background-color: hsl(var(--clr-black)); */
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -179,6 +179,10 @@ body {
 /* ------------------- */
 
 .icon {
+  fill: hsl(var(--clr-white));
+}
+
+.icon:hover {
   cursor: pointer;
   fill: hsl((var(--clr-green)));
 }
