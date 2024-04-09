@@ -216,12 +216,14 @@ header, main {
 /* navigation */
 
 .primary-header, .footer-nav {
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav {
   list-style: none;
+  padding-inline-start: 0;
   align-items: center;
 }
 
