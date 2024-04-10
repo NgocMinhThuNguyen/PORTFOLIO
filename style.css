@@ -12,7 +12,7 @@
   --fs-100: 1.125rem;
   --fs-200: 1.5rem;
   --fs-300: 2rem;
-  --fs-400: 3.5rem;
+  --fs-400: 3rem;
   --fs-700: 4.5rem;
   --fs-800: 5.5rem;
 
@@ -176,6 +176,7 @@ body {
 .fw-500 { font-weight: 500;}
 .fw-700 { font-weight: 700;}
 
+.fs-normal { font-size: 1rem;}
 .fs-100 { font-size: var(--fs-100);}
 .fs-200 { font-size: var(--fs-200);}
 .fs-300 { font-size: var(--fs-300);}
@@ -229,6 +230,24 @@ h1 {
   font-size: var(--fs-200);
 }
 
+section {
+  padding-bottom: 5rem;
+}
+
+section:first-child {
+  border-bottom: 2px solid hsl(var(--clr-white));
+}
+
+@media (max-width: 35rem) {
+  section:nth-child(2) {
+    border-bottom: 2px solid hsl(var(--clr-white));
+  }
+
+  section:last-child {
+    padding-top: 2.5rem;
+  }
+}
+
 /* ------------------- */
 /* Layout              */
 /* ------------------- */
@@ -241,7 +260,7 @@ header, main, footer {
 
 @media (min-width: 50rem) {
   header, main, footer {
-    padding-inline: 10.3rem;
+    padding-inline: 8rem;
   }
 }
 
@@ -286,7 +305,6 @@ header, main, footer {
 }
 
 .avatar {
-  /* max-width: 50%; */
   justify-self: center;
 }
 
@@ -294,14 +312,12 @@ header, main, footer {
   .intro {
     text-align: left;
     grid-template-columns: 2fr 1fr;
-    /* grid-template-rows: max-content; */
   }
 
   .avatar {
     grid-column: 2/-1;
     grid-row: 1/-1;
     object-fit: contain;
-    /* justify-self: end; */
   }
 
   .intro > *:not(:first-child) {
@@ -310,7 +326,27 @@ header, main, footer {
 
   .intro h1 {
     grid-row: 1/2;
-    /* padding-inline-end: 18rem; */
+  }
+}
+
+/* skill set */
+
+.skill-sets {
+  --gap: 1.4375rem;
+  text-align: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.skill span {
+  display: block;
+}
+
+@media (min-width: 35rem) {
+
+  .skill-sets {
+    text-align: left;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
