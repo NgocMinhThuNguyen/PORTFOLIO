@@ -433,3 +433,63 @@ main {
     z-index: 3;
   }
 }
+
+/* footer - contact */
+
+.form-wrapper {
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+.content {
+  padding-block-start: 3.625rem;
+}
+
+.content h1 {
+  padding-block-end: 1.25rem;
+}
+
+.contact-form {
+  --gap: 2rem;
+  flex-direction: column;
+}
+
+.form-item {
+  color: hsl(var(--clr-white));
+  padding: 1.5rem;
+  outline: transparent;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid hsl(var(--clr-white)); 
+}
+
+.form-item:focus {
+  border-bottom-color: hsl(var(--clr-green)) ;
+}
+
+.submit-btn {
+  background-color: transparent;
+  border: 0;
+  align-self: flex-end;
+}
+
+@media (min-width: 48rem) {
+  .form-wrapper {
+    padding-inline: 160px;
+  }
+}
+
+@media (min-width: 55rem) {
+  .form-wrapper {
+    --gap: 100px;
+    text-align: left;
+    padding-inline: 0;
+    padding-block-start: 5.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+    grid-column: 2/-1;
+    grid-row: 1/3;
+  }
+}
