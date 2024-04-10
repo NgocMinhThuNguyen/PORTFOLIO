@@ -213,10 +213,11 @@ h1 {
 
 .underline, .btn {
   color: hsl(var(--clr-white));
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: hsl(var(--clr-green));
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 1rem;
 }
 
@@ -305,6 +306,7 @@ main {
 
 .underline {
   text-transform: capitalize;
+  text-decoration-thickness: 5px;
   text-underline-offset: 1.1rem;
 }
 
@@ -409,6 +411,7 @@ main {
   }
 
   .view {
+    --gap: 3rem;
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: center;
