@@ -188,9 +188,10 @@ body {
   fill: hsl((var(--clr-green)));
 }
 
-.btn {
+.underline, .btn {
   color: hsl(var(--clr-white));
   text-transform: uppercase;
+  text-decoration: underline;
   text-decoration-color: hsl(var(--clr-green));
   text-decoration-thickness: 2px;
   text-underline-offset: 1rem;
@@ -235,15 +236,48 @@ header, main {
 
 /* introduction */
 .intro {
+  --gap: 1.25rem;
   text-align: center;
 }
 
-.intro h1 {
+.avatar {
+  margin-bottom: 1.25rem;
+}
 
+.intro h1 {
+  font-size: clamp(2.5rem, 4.507vw + 1.444rem, var(--fs-800));;
+}
+
+.underline {
+  text-transform: capitalize;
+  text-underline-offset: .5rem;
 }
 
 .avatar {
   max-width: 50%;
   justify-self: center;
+}
+
+@media (min-width: 35rem) {
+  .intro {
+    text-align: left;
+    grid-template-columns: 25rem 1fr;
+    /* grid-template-rows: max-content; */
+  }
+
+  .avatar {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    /* justify-self: end; */
+  }
+
+  .intro > *:not(:first-child) {
+    grid-column: 1/2;
+  }
+
+  .intro h1 {
+    grid-row: 1/2;
+    /* padding-inline-end: 18rem; */
+  }
 }
 
