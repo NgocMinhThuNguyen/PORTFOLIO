@@ -463,6 +463,7 @@ main {
 
 .form-item {
   color: hsl(var(--clr-white));
+  width: 100%;
   padding: 1.5rem;
   outline: transparent;
   background-color: transparent;
@@ -501,7 +502,32 @@ main {
   }
 }
 
+/* form validation */
+.form-item-wrapper {
+  position: relative;
+}
+
 .error-icon {
   border-radius: 50%;
   border: 1px solid hsl(var(--clr-red));
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  display: none;
+}
+
+.error-text {
+  font-size: .75rem;
+  text-align: right;
+  margin-top: .625rem;
+  display: none;
+}
+
+.form-item-wrapper[data-error="true"] .error-icon, 
+.form-item-wrapper[data-error="true"] .error-text {
+  display: block;
+}
+
+.form-item-wrapper[data-error="true"] .form-item {
+  border-bottom-color: hsl(var(--clr-red));
 }
