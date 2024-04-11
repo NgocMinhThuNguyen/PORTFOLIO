@@ -281,7 +281,7 @@ main {
 }
 
 .primary-header {
-  margin-top: 2rem;
+  margin-block: 2rem 4rem;
 }
 
 .nav {
