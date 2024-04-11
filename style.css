@@ -285,6 +285,7 @@ main {
 }
 
 .nav {
+  --gap: 1.5rem;
   list-style: none;
   padding-inline-start: 0;
   align-items: center;
