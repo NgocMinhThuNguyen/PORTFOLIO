@@ -109,20 +109,20 @@ select {
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+  src: url("assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
   font-weight: 500 700;
 }
 
 @supports not (font-variation-settings: normal) {
   @font-face {
     font-family: "Space Grotesk";
-    src: url("../assets/fonts/static/SpaceGrotesk-Medium.ttf");
+    src: url("assets/fonts/static/SpaceGrotesk-Medium.ttf");
     font-weight: 500;
   }
 
   @font-face {
     font-family: "Space Grotesk";
-    src: url("../assets/fonts/static/SpaceGrotesk-Bold.ttf");
+    src: url("assets/fonts/static/SpaceGrotesk-Bold.ttf");
     font-weight: 700;
   }
 }
