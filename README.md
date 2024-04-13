@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/NgocMinhThuNguyen/PORTFOLIO)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://ngocminhthunguyen.github.io/PORTFOLIO/)
 
 ## My process
 
