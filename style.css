@@ -206,12 +206,12 @@ h1 {
 }
 
 .icon {
-  fill: hsl(var(--clr-white));
+  fill: var(--clr-white);
 }
 
 .nav a:hover .icon {
   cursor: pointer;
-  fill: hsl(var(--clr-green));
+  fill: var(--clr-green);
 }
 
 .underline, .btn {
